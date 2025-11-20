@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm ci --legacy-peer-deps && tsc -b && vite build",
-    "build:prod": "npm ci --legacy-peer-deps && tsc -b && BUILD_MODE=prod vite build",
+    "build": "npm install --no-audit --no-fund && tsc -b && vite build",
+    "build:prod": "npm install --no-audit --no-fund && tsc -b && BUILD_MODE=prod vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "install-deps": "npm ci --legacy-peer-deps",
+    "install-deps": "npm install --no-audit --no-fund",
     "clean": "rimraf node_modules dist"
   },
   "dependencies": {
