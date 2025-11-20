@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Activity, TrendingUp, Shield, Zap } from 'lucide-react';
+import { Activity, TrendingUp, Shield, Zap, Github } from 'lucide-react';
 import { WalletButton } from '../WalletButton';
 import Squares from '../Squares';
 
@@ -73,6 +73,30 @@ export default function Layout({ children }: LayoutProps) {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </div>
                 <span className="text-xs font-medium text-emerald-500/80 tracking-wide uppercase">System Live</span>
+              </div>
+
+              {/* Social Media Links */}
+              <div className="flex items-center space-x-3">
+                <a
+                  href="https://github.com/bronkhorst12/-AgentSpy.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full hover:bg-zinc-800/50 transition-all duration-300 text-zinc-400 hover:text-white hover:shadow-lg hover:shadow-zinc-800/20"
+                  title="GitHub"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://x.com/AgentSpy01?t=bIK-3RKqScD6z8IBDn6IbQ&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full hover:bg-zinc-800/50 transition-all duration-300 text-zinc-400 hover:text-white hover:shadow-lg hover:shadow-zinc-800/20"
+                  title="X"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.627l-5.1-6.694-5.867 6.694h-3.306l7.73-8.835L2.25 2.25h6.814l4.885 6.469 5.595-6.469zM17.15 18.75h1.828L6.122 3.97H4.231l12.919 14.78z" />
+                  </svg>
+                </a>
               </div>
 
               <div className="pl-6 border-l border-white/5">
