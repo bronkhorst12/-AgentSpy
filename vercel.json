@@ -4,11 +4,6 @@
     "installCommand": "pnpm install --prefer-offline",
     "framework": "vite",
     "outputDirectory": "dist",
-    "env": {
-        "VITE_SUPABASE_URL": "@vite_supabase_url",
-        "VITE_SUPABASE_ANON_KEY": "@vite_supabase_anon_key",
-        "VITE_HELIUS_API_KEY": "@vite_helius_api_key"
-    },
     "redirects": [
         {
             "source": "/",
