@@ -1,0 +1,24 @@
+{
+    "buildCommand": "pnpm install --prefer-offline && pnpm build",
+    "devCommand": "pnpm dev",
+    "installCommand": "pnpm install --prefer-offline",
+    "framework": "vite",
+    "outputDirectory": "dist",
+    "env": [
+        "VITE_SUPABASE_URL",
+        "VITE_SUPABASE_ANON_KEY",
+        "VITE_HELIUS_API_KEY"
+    ],
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "/whale-activity"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/:path*",
+            "destination": "/index.html"
+        }
+    ]
+}
