@@ -54,8 +54,8 @@ export default function Layout({ children }: LayoutProps) {
                     key={item.path}
                     to={item.path}
                     className={`relative flex items-center space-x-2 px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ease-out ${isActive
-                        ? 'bg-zinc-800 text-white shadow-lg shadow-black/40 ring-1 ring-white/10'
-                        : 'text-zinc-400 hover:text-white hover:bg-white/5'
+                      ? 'bg-zinc-800 text-white shadow-lg shadow-black/40 ring-1 ring-white/10'
+                      : 'text-zinc-400 hover:text-white hover:bg-white/5'
                       }`}
                   >
                     <Icon className={`w-4 h-4 transition-colors duration-300 ${isActive ? 'text-purple-400' : 'group-hover:text-zinc-200'}`} />
