@@ -230,7 +230,6 @@
 
 # Gatsby files
 **/.cache/
-**/public
 
 # Vue.js
 **/dist/
@@ -843,7 +842,6 @@
 **/.pnp.*
 
 # pnpm
-**/pnpm-lock.yaml
 **/.pnpm-store/
 
 # Bower
