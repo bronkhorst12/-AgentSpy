@@ -1,7 +1,7 @@
 {
-    "buildCommand": "pnpm install --prefer-offline && pnpm build",
-    "devCommand": "pnpm dev",
-    "installCommand": "pnpm install --prefer-offline",
+    "buildCommand": "npm run build",
+    "devCommand": "npm run dev",
+    "installCommand": "npm ci --legacy-peer-deps",
     "framework": "vite",
     "outputDirectory": "dist",
     "redirects": [
