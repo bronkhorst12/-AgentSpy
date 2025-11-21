@@ -1,0 +1,98 @@
+{
+  "rpc": {
+    "helius": "https://mainnet.helius-rpc.com/?api-key=YOUR_KEY",
+    "shyft": "https://rpc.shyft.to/solana/mainnet?api_key=YOUR_KEY",
+    "triton": "https://api.triton.one/solana/mainnet",
+    "quicknode": "https://your-quicknode-endpoint.solana-mainnet.quicknode-api.com",
+    "alchemy": "https://solana-mainnet.g.alchemy.com/v2/YOUR_KEY",
+    "solana_labs": "https://api.mainnet-beta.solana.com",
+    "rpcgardener": "https://solana-rpc-gardener.solana-mainnet.quicknode-api.com"
+  },
+  "websocket": {
+    "helius": "wss://mainnet.helius-rpc.com/?api-key=YOUR_KEY",
+    "shyft": "wss://rpc.shyft.to/solana/mainnet?api_key=YOUR_KEY",
+    "quicknode": "wss://your-quicknode-endpoint.solana-mainnet.quicknode-api.com",
+    "alchemy": "wss://solana-mainnet.g.alchemy.com/v2/YOUR_KEY"
+  },
+  "webhooks": {
+    "helius": "https://mainnet.helius-rpc.com/v0/webhooks?api-key=YOUR_KEY",
+    "webhook_integration": "https://your-server.com/webhook/whale-alert"
+  },
+  "external_apis": {
+    "solscan": "https://api.solscan.io/v2",
+    "dexscreener": "https://api.dexscreener.com/latest",
+    "coinGecko": "https://api.coingecko.com/api/v3",
+    "birdeye": "https://public-api.birdeye.so/defi",
+    "jupiter": "https://quote-api.jup.ag/v6",
+    "raydium": "https://api.raydium.io/v2"
+  },
+  "environments": {
+    "mainnet": {
+      "rpc": "https://mainnet.helius-rpc.com/?api-key=YOUR_KEY",
+      "websocket": "wss://mainnet.helius-rpc.com/?api-key=YOUR_KEY"
+    },
+    "devnet": {
+      "rpc": "https://devnet.helius-rpc.com/?api-key=YOUR_KEY",
+      "websocket": "wss://devnet.helius-rpc.com/?api-key=YOUR_KEY"
+    },
+    "testnet": {
+      "rpc": "https://api.devnet.solana.com",
+      "websocket": "wss://api.devnet.solana.com"
+    }
+  },
+  "rate_limits": {
+    "helius_free": "100 requests/second",
+    "helius_paid": "1000+ requests/second",
+    "quicknode": "variable berdasarkan pricing plan",
+    "alchemy": "300+ requests/second"
+  },
+  "example_calls": {
+    "get_balance": {
+      "method": "POST",
+      "url": "https://mainnet.helius-rpc.com/?api-key=YOUR_KEY",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "getBalance",
+        "params": ["PUBLIC_KEY_ADDRESS"]
+      }
+    },
+    "get_transactions": {
+      "method": "POST", 
+      "url": "https://mainnet.helius-rpc.com/?api-key=YOUR_KEY",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "getSignaturesForAddress",
+        "params": ["PUBLIC_KEY_ADDRESS", {"limit": 10}]
+      }
+    },
+    "webhook_subscription": {
+      "method": "POST",
+      "url": "https://mainnet.helius-rpc.com/v0/webhooks?api-key=YOUR_KEY",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_KEY"
+      },
+      "body": {
+        "webhook": "https://your-server.com/webhook/transaction-alert",
+        "addresses": ["PUBLIC_KEY_ADDRESS"],
+        "transactionTypes": ["TRANSFER", "SWAP"],
+        "accountBuiltins": ["SYSTEM_PROGRAM"],
+        "accountProgramIds": []
+      }
+    }
+  },
+  "security_notes": {
+    "api_keys": "Replace YOUR_KEY dengan actual API key dari provider",
+    "webhook_urls": "Update webhook URLs dengan actual endpoints",
+    "rate_limiting": "Monitor rate limits untuk avoid throttling",
+    "webhook_security": "Add signature verification untuk webhook endpoints"
+  }
+}

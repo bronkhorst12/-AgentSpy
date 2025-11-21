@@ -1,4 +1,4 @@
-# 🤖 AgentSpy
+# AgentSpy
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -9,43 +9,43 @@
 
 **AgentSpy** adalah platform monitoring blockchain Solana yang canggih dengan kemampuan real-time untuk melacak aktivitas whale, aliran pasar, data staking, dan feed real-time. Didesain untuk memberikan insight mendalam tentang ekosistem Solana.
 
-## ✨ Fitur Utama
+## Fitur Utama
 
-### 🐋 **Whale Activity Tracker**
+### Whale Activity Tracker
 - Monitoring transaksi besar dari dompet whale Solana
 - Pelacakan hingga 5 alamat whale utama
 - Filter berdasarkan jumlah transaksi dan waktu
 - Eksport data ke CSV/JSON
 - Real-time signature tracking
 
-### 📊 **Market Flow Analyzer**
+### Market Flow Analyzer
 - Analisis DEX (Jupiter, Raydium, Orca)
 - Tracking volume trading real-time
 - Price action monitoring via CoinGecko API
 - Flow visualization untuk token pairs
 - Swap analytics dengan filter advanced
 
-### ⚡ **Staking Monitor**
+### Staking Monitor
 - Monitor 849+ validator Solana
 - Data APY real-time untuk semua validator
 - Staking statistics dan performance metrics
 - Leaderboard validator berdasarkan performa
 - Export staking data untuk analysis
 
-### 🔴 **Real-time Feed**
+### Real-time Feed
 - Live event streaming dari blockchain Solana
 - Real-time transaction updates
 - WebSocket connection untuk data terbaru
 - Auto-refresh setiap 5 detik
 - Event aggregation dari multiple sources
 
-### 💼 **Wallet Integration**
+### Wallet Integration
 - Multi-wallet support (Phantom, Solflare, Coinbase, Trust Wallet, Ledger)
 - Seamless wallet connection
 - Transaction history integration
 - Balance tracking dan wallet management
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18** - Modern UI library
@@ -101,7 +101,7 @@ AgentSpy/
 └── .github/                     # GitHub templates
 ```
 
-## 🚀 Instalasi & Menjalankan
+## Instalasi & Menjalankan
 
 ### Prerequisites
 - Node.js 18+ dan npm/pnpm
@@ -163,12 +163,12 @@ npm run build
 npm run preview
 ```
 
-## 🌐 Live Demo
+## Live Demo
 
 - **Production URL**: [https://4gt721fta2x1.space.minimax.io](https://4gt721fta2x1.space.minimax.io)
 - **GitHub Repository**: [https://github.com/superbixnggas/AgentSpy](https://github.com/superbixnggas/AgentSpy)
 
-## 📚 Dokumentasi
+## Dokumentasi
 
 - [Architecture Overview](docs/architecture.md)
 - [API Documentation - Market Flow](docs/api-market-flow.md)
@@ -177,15 +177,15 @@ npm run preview
 - [Changelog](CHANGELOG.md)
 - [Roadmap](ROADMAP.md)
 
-## 🤝 Kontribusi
+## Kontribusi
 
 Kami welcome kontribusi dari community! Silakan baca [CONTRIBUTING.md](CONTRIBUTING.md) untuk guidelines.
 
-## 📄 License
+## License
 
 Proyek ini menggunakan [MIT License](LICENSE).
 
-## 🔒 Security
+## Security
 
 Untuk melaporkan security vulnerabilities, lihat [SECURITY.md](SECURITY.md).
 
